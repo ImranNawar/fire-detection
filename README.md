@@ -1,6 +1,6 @@
 # Fire Detection 🔥
 
-This repository contains a fire detection system using YOLOv8, a powerful real-time object detection algorithm.
+This repository focuses on creating a fire detection system by fine-tuning YOLOv8 on a dedicated dataset for real-time fire detection.
 
 ## Overview
 
@@ -8,26 +8,28 @@ YOLO (You Only Look Once) is a pre-trained model capable of detecting up to 80 c
 
 ## Architecture
 
-![YOLO Architecture](https://github.com/ultralytics/yolov5/raw/master/web/static/model_comparison.png)
-- YOLO architecture image
-
 For our implementation, we used the YOLOv8n model, which offers a good balance between speed and accuracy. The training was performed on Kaggle using a P100 GPU, with a total training time of approximately 14 minutes.
 
 ### Training Results
 
-![Loss Curves](./content/loss_curves.png)
-![mAP](./content/mAP.png)
+<!-- ![Loss Curves](./content/loss_curves.png)
+![mAP](./content/mAP.png) -->
+<p align="center">
+  <img src="./content/loss_curves.png" alt="Loss Curves", width="80%">
+</p>
+<p align="center">
+  <img src="./content/mAP.png" alt="mAP", width="80%">
+</p>
 
 ## Dataset
 
-We used the [Fire Detection dataset](https://www.kaggle.com/datasets/metinmekiabullrahman/fire-detection) from Kaggle, which contains the following distribution:
+We used the [Fire Detection dataset](https://www.kaggle.com/datasets/metinmekiabullrahman/fire-detection) from Kaggle, with the following distribution:
 
-- Training set: 1004 images with corresponding labels
-- Validation set: 754 images with corresponding labels
-- Test set: 751 images with corresponding labels
+- **Training set:** 1004 images with corresponding labels
+- **Validation set:** 754 images with corresponding labels
+- **Test set:** 751 images with corresponding labels
 
-The dataset is configured with a data.yaml file that defines the class structure.
-
+The dataset is configured with a `data.yaml` file that defines the class structure.
 
 ## Usage
 
@@ -41,11 +43,9 @@ python app.py
 ```
 ## Demo
 
-![Demo Screenshot](./content/demo_screenshot.png)
-
-## License
-
-[Apache License](LICENSE)
+<p align="center">
+  <img src="./content/demo_screenshot.png" alt="Demo Screenshot" width="70%">
+</p>
 
 ## Acknowledgements
 
